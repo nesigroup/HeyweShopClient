@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  RITLPageViewController.swift
 //  HeyweShopClient
 //
 //  Created by YueWen on 2017/12/21.
@@ -8,11 +8,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+/// 自定义的pageController
+class RITLPageViewController: UIPageViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,8 +22,11 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-
-
 }
 
+
+class RITLScrollHorizontalPageViewController : RITLPageViewController{
+    
+    
+    
+}

@@ -19,8 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         
-        let vc = UIViewController()
-        vc.view.backgroundColor = UIColor.red
+        let vc = TKRootTabBarController()
+        vc.view.backgroundColor = UIColor.yellow
         
         window?.rootViewController = vc
         

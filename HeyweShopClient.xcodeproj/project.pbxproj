@@ -7,17 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DAD15D4969BB3BAD6C261EC5 /* Pods_HeyweShopClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0367F3D39CA07CD806A4108F /* Pods_HeyweShopClient.framework */; };
 		DB63C4A41FEB6186000234C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB63C4A31FEB6186000234C3 /* AppDelegate.swift */; };
-		DB63C4A61FEB6186000234C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB63C4A51FEB6186000234C3 /* ViewController.swift */; };
 		DB63C4AB1FEB6186000234C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB63C4AA1FEB6186000234C3 /* Assets.xcassets */; };
+		DB660C561FEB8DA600991D1D /* TKClientService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB660C551FEB8DA600991D1D /* TKClientService.swift */; };
+		DB660C591FEB90F200991D1D /* TKRootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB660C581FEB90F200991D1D /* TKRootTabBarController.swift */; };
+		DB660C5C1FEB97E300991D1D /* RITLPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB660C5B1FEB97E300991D1D /* RITLPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0367F3D39CA07CD806A4108F /* Pods_HeyweShopClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HeyweShopClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B38F6C71B4EE114C925AA86 /* Pods-HeyweShopClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeyweShopClient.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HeyweShopClient/Pods-HeyweShopClient.debug.xcconfig"; sourceTree = "<group>"; };
+		869F7091B2DF25D03462616B /* Pods-HeyweShopClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeyweShopClient.release.xcconfig"; path = "Pods/Target Support Files/Pods-HeyweShopClient/Pods-HeyweShopClient.release.xcconfig"; sourceTree = "<group>"; };
 		DB63C4A01FEB6186000234C3 /* HeyweShopClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeyweShopClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB63C4A31FEB6186000234C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DB63C4A51FEB6186000234C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DB63C4AA1FEB6186000234C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB63C4AF1FEB6186000234C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB660C551FEB8DA600991D1D /* TKClientService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TKClientService.swift; sourceTree = "<group>"; };
+		DB660C581FEB90F200991D1D /* TKRootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TKRootTabBarController.swift; sourceTree = "<group>"; };
+		DB660C5B1FEB97E300991D1D /* RITLPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RITLPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -25,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAD15D4969BB3BAD6C261EC5 /* Pods_HeyweShopClient.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		71CF7A78978ED390F175F302 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0367F3D39CA07CD806A4108F /* Pods_HeyweShopClient.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8E7BBAE7C597E9994E78F030 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1B38F6C71B4EE114C925AA86 /* Pods-HeyweShopClient.debug.xcconfig */,
+				869F7091B2DF25D03462616B /* Pods-HeyweShopClient.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DB63C4971FEB6186000234C3 = {
 			isa = PBXGroup;
 			children = (
 				DB63C4A21FEB6186000234C3 /* HeyweShopClient */,
 				DB63C4A11FEB6186000234C3 /* Products */,
+				8E7BBAE7C597E9994E78F030 /* Pods */,
+				71CF7A78978ED390F175F302 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -50,12 +78,78 @@
 		DB63C4A21FEB6186000234C3 /* HeyweShopClient */ = {
 			isa = PBXGroup;
 			children = (
+				DB660C4F1FEB8C2200991D1D /* API */,
+				DB660C511FEB8C2200991D1D /* Asset */,
+				DB660C541FEB8C2200991D1D /* Controller */,
+				DB660C501FEB8C2200991D1D /* Model */,
+				DB660C521FEB8C2200991D1D /* Utilities */,
+				DB660C531FEB8C2200991D1D /* View */,
 				DB63C4A31FEB6186000234C3 /* AppDelegate.swift */,
-				DB63C4A51FEB6186000234C3 /* ViewController.swift */,
 				DB63C4AA1FEB6186000234C3 /* Assets.xcassets */,
 				DB63C4AF1FEB6186000234C3 /* Info.plist */,
 			);
 			path = HeyweShopClient;
+			sourceTree = "<group>";
+		};
+		DB660C4F1FEB8C2200991D1D /* API */ = {
+			isa = PBXGroup;
+			children = (
+				DB660C551FEB8DA600991D1D /* TKClientService.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		DB660C501FEB8C2200991D1D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DB660C511FEB8C2200991D1D /* Asset */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Asset;
+			sourceTree = "<group>";
+		};
+		DB660C521FEB8C2200991D1D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				DB660C5A1FEB972200991D1D /* Controller */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		DB660C531FEB8C2200991D1D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DB660C541FEB8C2200991D1D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DB660C571FEB90DA00991D1D /* Root */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DB660C571FEB90DA00991D1D /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				DB660C581FEB90F200991D1D /* TKRootTabBarController.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		DB660C5A1FEB972200991D1D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DB660C5B1FEB97E300991D1D /* RITLPageViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -65,9 +159,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DB63C4B21FEB6186000234C3 /* Build configuration list for PBXNativeTarget "HeyweShopClient" */;
 			buildPhases = (
+				3CD188C027A34D856A916390 /* [CP] Check Pods Manifest.lock */,
 				DB63C49C1FEB6186000234C3 /* Sources */,
 				DB63C49D1FEB6186000234C3 /* Frameworks */,
 				DB63C49E1FEB6186000234C3 /* Resources */,
+				957F8D1516B219CCD0B4614A /* [CP] Embed Pods Frameworks */,
+				B14B90FDBFA4321DD3B8C877 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -84,6 +181,7 @@
 		DB63C4981FEB6186000234C3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = TK;
 				LastSwiftUpdateCheck = 0910;
 				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = YueWen;
@@ -123,12 +221,78 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3CD188C027A34D856A916390 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HeyweShopClient-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		957F8D1516B219CCD0B4614A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HeyweShopClient/Pods-HeyweShopClient-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/ESPullToRefresh/ESPullToRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ESPullToRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HeyweShopClient/Pods-HeyweShopClient-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B14B90FDBFA4321DD3B8C877 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HeyweShopClient/Pods-HeyweShopClient-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DB63C49C1FEB6186000234C3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB63C4A61FEB6186000234C3 /* ViewController.swift in Sources */,
+				DB660C591FEB90F200991D1D /* TKRootTabBarController.swift in Sources */,
+				DB660C561FEB8DA600991D1D /* TKClientService.swift in Sources */,
+				DB660C5C1FEB97E300991D1D /* RITLPageViewController.swift in Sources */,
 				DB63C4A41FEB6186000234C3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -245,6 +409,7 @@
 		};
 		DB63C4B31FEB6186000234C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B38F6C71B4EE114C925AA86 /* Pods-HeyweShopClient.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -262,6 +427,7 @@
 		};
 		DB63C4B41FEB6186000234C3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 869F7091B2DF25D03462616B /* Pods-HeyweShopClient.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
